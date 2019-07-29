@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/galleryFragment">
+
+    <fragment
+            android:id="@+id/galleryFragment"
+            android:name="com.jw.flickrviewr.gallery.GalleryFragment"
+            android:label="@string/gallery_fragment"
+            tools:layout="@layout/fragment_gallery">
+        <argument android:name="tag" app:argType="string" android:defaultValue=" "/>
+        <action
+                android:id="@+id/action_galleryFragment_to_photoFragment"
+                app:destination="@id/photoFragment"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out"
+                app:popUpTo="@id/galleryFragment">
+        </action>
+    </fragment>
+
+    <fragment
+            android:id="@+id/favoritesFragment"
+            android:name="com.jw.flickrviewr.favorites.FavoritesFragment"
+            android:label="@string/favorites_fragment"
+            tools:layout="@layout/fragment_favorites">
+        <action
+                android:id="@+id/action_favoritesFragment_to_photoFragment"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out"
+                app:popUpTo="@id/favoritesFragment"
+                app:destination="@id/photoFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/searchFragment"
+            android:name="com.jw.flickrviewr.search.SearchFragment"
+            android:label="@string/search_fragment"
+            tools:layout="@layout/fragment_search" >
+        <action
+                android:id="@+id/action_searchFragment_to_galleryFragment"
+                app:destination="@id/galleryFragment"
+                app:popUpTo="@id/galleryFragment"
+                app:popUpToInclusive="true">
+        </action>
+    </fragment>
+
+    <fragment
+            android:id="@+id/photoFragment"
+            android:name="com.jw.flickrviewr.photo.PhotoFragment"
+            android:label="@string/photo_fragment"
+            tools:layout="@layout/fragment_photo">
+        <argument android:name="url" app:argType="string"/>
+        <argument android:name="id" app:argType="string"/>
+    </fragment>
+
+</navigation>

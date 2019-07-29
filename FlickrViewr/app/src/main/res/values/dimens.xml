@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="toolbar_elevation_value">4dp</dimen>
+    <dimen name="information_text_size">15sp</dimen>
+    <dimen name="host_fragment_margin_bottom">60dp</dimen>
+    <dimen name="grid_cardview_corner_radius">8dp</dimen>
+    <dimen name="grid_cardview_card_elevation">5dp</dimen>
+    <dimen name="grid_cardview_title_text_size">12sp</dimen>
+    <dimen name="grid_cardview_title_text_padding">3dp</dimen>
+
+</resources>

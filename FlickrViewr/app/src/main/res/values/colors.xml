@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="grid_view_title_bg">#66000000</color>
+    <color name="icon_color">#008cff</color>
+    <color name="bottom_nav_btn_checked_color">#008cff</color>
+    <color name="bottom_nav_btn_unchecked_color">#dedede</color>
+    <color name="gallery_snackbar_action_color">#defdff</color>
+
+</resources>

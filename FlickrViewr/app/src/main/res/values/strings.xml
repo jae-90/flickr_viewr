@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- app name -->
+    <string name="app_name">Flickr Viewr</string>
+
+    <!-- fragment labels -->
+    <string name="gallery_fragment">Gallery</string>
+    <string name="search_fragment">Search</string>
+    <string name="photo_fragment">Photo</string>
+    <string name="favorites_fragment">Favorites</string>
+
+    <!-- fetch data error msg -->
+    <string name="internet_not_connected_msg">Internet is not connected.</string>
+
+    <!-- menu titles -->
+    <string name="menu_search_title">Search</string>
+    <string name="menu_save_title">Save</string>
+
+    <!-- search hint -->
+    <string name="searchable_search_hint">Type a keyword</string>
+
+    <!-- bottom navigation labels -->
+    <string name="bottom_navigation_label_1">Gallery</string>
+    <string name="bottom_navigation_label_2">Favorites</string>
+
+    <!-- photo fragment-->
+    <string name="photo_transition_name">imgView_big</string>
+
+    <!-- gallery fragment -->
+    <string name="gallery_snackbar_load_txt">Load more Photo(s)?</string>
+    <string name="gallery_snackbar_load_action">LOAD</string>
+    <string name="gallery_information_text_msg">No contents to display.\nSearch for Photos.</string>
+
+    <!-- favorites fragment -->
+    <string name="favorites_saved_txt">Image saved.</string>
+    <string name="favorites_already_saved_txt">Image already saved.</string>
+    <string name="favorites_information_text_msg">No saved Photo(s) found.</string>
+
+</resources>
